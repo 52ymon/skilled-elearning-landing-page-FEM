@@ -1,0 +1,112 @@
+:root {
+    --lilac: hsla(234, 25%, 52%, 1);
+    --violet: hsla(234, 53%, 16%, 1);
+    --gray: hsla(233, 10%, 56%, 1);
+    --pink: hsla(341, 92%, 62%, 1);
+    --pastel-pink: hsla(341, 100%, 83%, 1);
+    --white: hsla(0, 0, 100%, 1);
+    --gradient-orange: hsla(13, 100%, 64%, 1);
+    --gradient-pink: hsla(322, 87%, 55%, 1);
+    --gradient-blue: hsla(237, 100%, 64%, 1);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+}
+body {
+    background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    width: 100vw;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-right: 165px;
+    padding-left: 165px;
+}
+.logo-dark {
+    max-height: 28px;
+}
+.right-button {
+    max-height: 56px;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 28px;
+    background-color: var(--violet);
+    border: none;
+    color: #fff;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.right-button:hover {
+    background-color: var(--lilac);
+}
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+.left {
+    margin-top: 16rem;
+    margin-left: 165px;
+    width: 457px;
+    height: 359px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+h1 {
+    font-weight: 800;
+    font-size: 56px;
+    padding-bottom: 2rem;
+}
+p {
+    width: 445px;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--gray);
+    padding-bottom: 7rem;
+}
+.left-button {
+    max-height: 63px;
+    max-width: 167px;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 28px;
+    background-image: linear-gradient(
+        var(--gradient-orange),
+        var(--gradient-pink)
+    );
+    border: none;
+    color: #fff;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.right {
+    display: block;
+    margin-top: -15%;
+    margin-right: -25%;
+    overflow-x: hidden;
+}
+.hero {
+    width: 100%;
+}
